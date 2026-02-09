@@ -71,6 +71,7 @@ Questão 5. Melhor otimização
 Resposta: Partition by tpep_dropoff_datetime and Cluster on VendorID.
 
 Questão 6. Desempenho de particionamento
+
 Resposta: 310.24 MB for non-partitioned table and 26.84 MB for the partitioned table. 
 
 Questão 7. Armazenamento externo de tabelas  
