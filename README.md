@@ -16,6 +16,25 @@ https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 - Parquet
 - Git/GitHub
 
+## Como reproduzir localmente (DuckDB)
+
+### 1) Baixar os dados (Jan–Jun 2024)
+Crie a pasta `data/` e baixe os parquets:
+
+```bash
+mkdir -p data
+cd data
+
+wget https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet
+wget https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-02.parquet
+wget https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-03.parquet
+wget https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-04.parquet
+wget https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-05.parquet
+wget https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-06.parquet
+
+cd ..
+
+
 ## Perguntas e respostas
 
 Questão 1. Count total records  
