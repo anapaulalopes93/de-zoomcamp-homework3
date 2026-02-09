@@ -33,9 +33,7 @@ wget https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-05.par
 wget https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-06.parquet
 
 cd ..
-bash```
-
-
+```
 ## Perguntas e respostas
 
 Questão 1. Count total records  
