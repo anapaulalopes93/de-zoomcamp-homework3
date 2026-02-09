@@ -34,6 +34,25 @@ wget https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-06.par
 
 cd ..
 ```
+2) Rodar as queries no DuckDB
+```
+duckdb
+```
+Dentro do DuckDB:
+```
+CREATE VIEW yellow_2024 AS
+SELECT * FROM read_parquet('data/yellow_tripdata_2024-*.parquet');
+
+-- depois rode as queries em:
+-- sql/homework3_queries.sql
+```
+Depois:
+
+```bash
+git add README.md
+git commit -m "Adicionar passos de reprodução local (download + DuckDB)"
+git push
+```
 ## Perguntas e respostas
 
 Questão 1. Contar o total de registros  
