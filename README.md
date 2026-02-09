@@ -59,19 +59,19 @@ Questão 1. Contar o total de registros
 Resposta: 20,332,093  
 
 Questão 2. Estimativa de leitura de dados  
-Resposta: 18.82 MB external / 47.60 MB table  
+Resposta: 18.82 MB for the External Table and 47.60 MB for the Materialized Table.
 
 Questão 3. Armazenamento Columnar  
-Resposta: BigQuery lê apenas as colunas consultadas  
+Resposta: BigQuery is a columnar database, and it only scans the specific columns requested in the query. Querying two columns (PULocationID, DOLocationID) requires reading more data than querying one column (PULocationID), leading to a higher estimated number of bytes processed.
 
-Questão 4. Valor da tarifa = 0  
+Questão 4. fare_amount = 0  
 Resposta: 8,333  
 
 Questão 5. Melhor otimização  
-Resposta: Partition by dropoff datetime and cluster by VendorID  
+Resposta: Partition by tpep_dropoff_datetime and Cluster on VendorID.
 
 Questão 6. Desempenho de particionamento 
-Resposta: 310.24 MB vs 26.84 MB  
+Resposta: 310.24 MB for non-partitioned table and 26.84 MB for the partitioned table. 
 
 Questão 7. Armazenamento externo de tabelas  
 Resposta: GCP Bucket  
